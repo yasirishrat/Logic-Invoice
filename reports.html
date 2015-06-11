@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Logic Invoice is a user-friendly and feature-rich accounting and invoicing solution for your small business needs.">
+    <meta name="description" content="Logic Invoice Reports">
     <meta name="author" content="Equotix">
 
-    <title>Logic Invoice Documentation</title>
+    <title>Logic Invoice Reports</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="active">
+                    <li>
                         <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
                     </li>
                     <li>
@@ -56,7 +56,7 @@
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#admin"><i class="fa fa-fw fa-dashboard"></i> Administration Panel <i class="fa fa-fw fa-angle-down"></i></a>
-                        <ul id="admin" class="collapse">
+                        <ul id="admin" class="nav nav-second-level collapse in">
                             <li>
                                 <a href="login.html">Log In</a>
                             </li>
@@ -76,7 +76,7 @@
                                 <a href="extensions.html">Extensions</a>
                             </li>
                             <li>
-                                <a href="reports.html">Reports</a>
+                                <a class="active" href="reports.html">Reports</a>
                             </li>
                             <li>
                                 <a href="system.html">System</a>
@@ -96,7 +96,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Logic Invoice <small>Documentation</small>
+                            Logic Invoice <small>Reports</small>
                         </h1>
                     </div>
                 </div>
@@ -105,80 +105,47 @@
 
 				<div class="row">
 					<div class="col-md-12">
-						<p>Logic Invoice is a user-friendly and feature-rich accounting and invoicing solution for your small business needs. Unlike many other accounting software out there, Logic Invoice is free, and open source. By making Logic Invoice open source, the possibilities are endless!</p>
-					</div>
-					<div class="col-md-12">
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-book"></i> Accounting</h3>
-							<p class="text-center">Create journal entries, manage your accounts and view your chart of accounts.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-usd"></i> Invoicing</h3>
-							<p class="text-center">Keep track of invoices and bill your customers from your administration panel.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-refresh"></i> Recurring Payments</h3>
-							<p class="text-center">Automatically generate recurring invoices for your customers.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-line-chart"></i> Reporting</h3>
-							<p class="text-center">Generate basic reports for accounting, invoices, or recurring payments.</p>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-language"></i> Multi-Language</h3>
-							<p class="text-center">Configure your system to use various languages.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-btc"></i> Multi-currency</h3>
-							<p class="text-center">Supports multiple currencies in your system.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-at"></i> Email Templates</h3>
-							<p class="text-center">Customisable email notificatoins to both you and your customers.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-file-o"></i> Article Pages</h3>
-							<p class="text-center">Easily add pages to your website.</p>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-credit-card"></i> Payment Gateways</h3>
-							<p class="text-center">Collect payments online with integrated payment gateways.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-file-text-o"></i> Blog</h3>
-							<p class="text-center">Keep your customers updated with the built-in blog.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-puzzle-piece"></i> Modules</h3>
-							<p class="text-center">Supports modules to enhance functionalities.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-users"></i> Multiple Users</h3>
-							<p class="text-center">Supports multiple administration users.</p>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<hr>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<h2>Requirements</h2>
-						<p>To run Logic Invoice on your server, you will need to ensure that you meet the following requirements:</p>
-						<ol>
-							<li>PHP 5.3 and above</li>
-							<li>MySQL database</li>
-							<li>Linux / Windows web server (Apache preferred)</li>
-						</ol>
+						<h2>Accounting</h2>
+						<h3>Chart of Accounts</h3>
+						<img class="img-responsive" src="img/coa.png" alt="chart of accounts"><br>
+						<p>The Chart of Accounts page gives you a quick overview of all your accounts that you have created so far. You will also be able to easily generate a printer-friendly version by clicking on the Print button.</p>
+						
+						<h3>Statement of Comprehensive Income (SCI)</h3>
+						<img class="img-responsive" src="img/sci.png" alt="income statement"><br>
+						<p>The Statement of Comprehensive Income, also known as the Income Statement, provides you with your business’ financial performance over the specified period. A printer-friendly version can be generated by clicking on the print button.</p>
+						
+						<h3>Statement of Financial Position (SFP)</h3>
+						<img class="img-responsive" src="img/sfp.png" alt="balance sheet"><br>
+						<p>The Statement of Financial Position, also known as a Balance Sheet, provides a snapshot of your business’ current assets, liabilities and equities. You may use the printer button to generate a printer-friendly version.</p>
+						
 						<div class="col-md-12">
 							<hr>
 						</div>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Invoices Report</h2>
+						<img class="img-responsive" src="img/invoices_report.png" alt="invoices report"><br>
+						<p>Invoices Report allows you to have an overview of the invoices you have collected for the period specified.</p>
+						
+						<div class="col-md-12">
+							<hr>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Recurring Payments Report</h2>
+						<img class="img-responsive" src="img/rcp_report.png" alt="recurring payments report"><br>
+						<p>On this page, you will be able to have an overview of the recurring payments that you have collected for the period specified.</p>
+						
+						<div class="col-md-12">
+							<hr>
+						</div>
+					</div>
+				</div>
+				
             <!-- /.container-fluid -->
 
 			</div>

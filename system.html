@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Logic Invoice System Settings">
+    <meta name="author" content="Equotix">
+
+    <title>Logic Invoice System Settings</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Logic Invoice <small>Docs</small></a>
+            </div>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="installation.html"><i class="fa fa-fw fa-wrench"></i> Installation</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#admin"><i class="fa fa-fw fa-dashboard"></i> Administration Panel <i class="fa fa-fw fa-angle-down"></i></a>
+                        <ul id="admin" class="nav nav-second-level collapse in">
+                            <li>
+                                <a href="login.html">Log In</a>
+                            </li>
+                            <li>
+                                <a href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="accounting.html">Accounting</a>
+                            </li>
+                            <li>
+                                <a href="billing.html">Billing</a>
+                            </li>
+                            <li>
+                                <a href="content.html">Content</a>
+                            </li>
+                            <li>
+                                <a href="extensions.html">Extensions</a>
+                            </li>
+                            <li>
+                                <a href="reports.html">Reports</a>
+                            </li>
+                            <li>
+                                <a class="active" href="system.html">System</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Logic Invoice <small>System Settings</small>
+                        </h1>
+                    </div>
+                </div>
+				
+                <!-- /.row -->
+
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Languages</h2>
+						<img class="img-responsive" src="img/languages.png" alt="languages"><br>
+						<p>Logic Invoice is built in a way that allows it to support multiple languages. To add a new language to the administration panel, add the language files to admin/language/*your_language_folder*. To add it to the front end of Logic Invoice, add the files to front/language/*your_language_folder*.</p>
+						
+						<h3>Adding a New Language</h3>
+						<img class="img-responsive" src="img/add_language.png" alt="adding languages"><br>
+						<table class="table table-striped table-bordered">
+							<tr>
+								<td>Name</td>
+								<td>Name of the language</td>
+							</tr>
+							<tr>
+								<td>Code</td>
+								<td>ISO language code</td>
+							</tr>
+							<tr>
+								<td>Locale</td>
+								<td>This is used by browsers to detect the language of the site automatically</td>
+							</tr>
+							<tr>
+								<td>Image</td>
+								<td>Used for all language tabs found in the administration panel</td>
+							</tr>
+							<tr>
+								<td>Directory</td>
+								<td>The directory (file name) where the language files are found</td>
+							</tr>
+						</table>
+						
+						<div class="col-md-12">
+							<hr>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Logs</h2>
+						<img class="img-responsive" src="img/error_logs.png" alt="error logs">
+						
+						<h3>Activity Log</h3>
+						<p>All system activities are logged here.</p>
+						
+						<h3>Error Log</h3>
+						<p>System errors will be logged here.</p>
+						
+						<div class="col-md-12">
+							<hr>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Settings</h2>
+						<h3>General</h3>
+						<img class="img-responsive" src="img/settings_general.png" alt="general settings"><br>
+						<table class="table table-striped table-bordered">
+							<tr>
+								<td>Name</td>
+								<td>The name that will appear on Logic Invoice, such as in emails, except in invoices</td>
+							</tr>
+							<tr>
+								<td>Registered name</td>
+								<td>The name that will appear in invoices</td>
+							</tr>
+							<tr>
+								<td>Address</td>
+								<td>Address of your business</td>
+							</tr>
+							<tr>
+								<td>Email</td>
+								<td>The main email address of your business</td>
+							</tr>
+							<tr>
+								<td>Telephone</td>
+								<td>Business telephone number</td>
+							</tr>
+							<tr>
+								<td>Fax</td>
+								<td>Business fax number</td>
+							</tr>
+						</table>
+						
+						<h3>Website</h3>
+						<img class="img-responsive" src="img/settings_website.png" alt="website settings"><br>
+						<p>On this page, you will configure the settings for both the administration and the front end of your Logic Invoice website. The main content on your front end home page is also configured here.</p>
+						
+						<h3>Accounting</h3>
+						<img class="img-responsive" src="img/settings_accounting.png" alt="accounting settings"><br>
+						<p>This page is where you will configure your Accounting settings, including the functional currency that your business operates in, the financial year end, as well as whether to automatically update the different exchange rates daily.</p>
+						
+						<h3>Billing</h3>
+						<img class="img-responsive" src="img/settings_billing.png" alt="billing settings"><br>
+						<p>You will be able to configure your invoice settings on this page.</p>
+						
+						<h3>Recurring Payments</h3>
+						<img class="img-responsive" src="img/settings_rp.png" alt="recurring payment settings"><br>
+						<p>This page allows you to configure the settings for Recurring Payments.</p>
+						
+						<h3>Mail</h3>
+						<img class="img-responsive" src="img/settings_mail.png" alt="mail settings"><br>
+						<table class="table table-striped table-bordered">
+							<tr>
+								<td>Mail Protocol</td>
+								<td>If PHP Mail is set up on your site’s server, you can use “Mail”. Otherwise, you will have to use SMTP and fill up the SMTP settings instead.</td>
+							</tr>
+							<tr>
+								<td>Mail Parameter</td>
+								<td>The email address to be used if “Mail” is selected as the Mail Protocol. E.g. -fcontact@yourstore.com</td>
+							</tr>
+							<tr>
+								<td>SMTP Fields</td>
+								<td>Fill in these fields only if your Mail Protocol is set to “SMTP”</td>
+							</tr>
+							</table>
+						
+						<h3>Server</h3>
+						<img class="img-responsive" src="img/settings_server.png" alt="server settings"><br>
+						<p>Server settings should only be modified if you are sure your server supports the settings.</p>
+						
+						<h3>Statuses</h3>
+						<img class="img-responsive" src="img/statuses.png" alt="statuses settings"><br>
+						<p>The statuses that are available in your Logic Invoice can be found here. You may add, edit, or delete the statuses according to your needs. Do be sure to check all your other configurations that uses statuses, especially after you deleted a status.</p>
+						
+						<h3>Users</h3>
+						<p>Here, you will find a list of all users. You may add, edit or delete users from this page.</p>
+						
+						<h3>User Groups</h3>
+						<img class="img-responsive" src="img/user_groups.png" alt="user groups settings"><br>
+						<p>You may create multiple user groups for your administration panel users and restrict their access to certain areas by selecting/deselecting their permissions.</p>
+						
+						<div class="col-md-12">
+							<hr>
+						</div>
+					</div>
+				</div>
+				
+            <!-- /.container-fluid -->
+
+			</div>
+        <!-- /#page-wrapper -->
+		</div>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>

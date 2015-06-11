@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Logic Invoice is a user-friendly and feature-rich accounting and invoicing solution for your small business needs.">
+    <meta name="description" content="Installation guide for Logic Invoice.">
     <meta name="author" content="Equotix">
 
-    <title>Logic Invoice Documentation</title>
+    <title>Logic Invoice Installation</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -48,10 +48,10 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="active">
+                    <li>
                         <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="installation.html"><i class="fa fa-fw fa-wrench"></i> Installation</a>
                     </li>
                     <li>
@@ -96,7 +96,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Logic Invoice <small>Documentation</small>
+                            Logic Invoice <small>Installation</small>
                         </h1>
                     </div>
                 </div>
@@ -105,75 +105,59 @@
 
 				<div class="row">
 					<div class="col-md-12">
-						<p>Logic Invoice is a user-friendly and feature-rich accounting and invoicing solution for your small business needs. Unlike many other accounting software out there, Logic Invoice is free, and open source. By making Logic Invoice open source, the possibilities are endless!</p>
-					</div>
-					<div class="col-md-12">
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-book"></i> Accounting</h3>
-							<p class="text-center">Create journal entries, manage your accounts and view your chart of accounts.</p>
+						<h2>Downloading Logic Invoice</h2>
+						<p>You may get a copy of Logic Invoice from <a href="https://github.com/Equotix/Logic-Invoice/releases" target="_blank">here</a>.</p>
+						<p>After your download is complete, open up the ZIP file. It should contain a folder named “upload”.</p>
+						<img class="img-responsive" src="img/upload.png" alt="upload folder"><br>
+						<p>The folder contents should look something like this:</p>
+						<img class="img-responsive" src="img/inside_upload.png" alt="inside upload folder">
+						<div class="col-md-12">
+							<hr>
 						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-usd"></i> Invoicing</h3>
-							<p class="text-center">Keep track of invoices and bill your customers from your administration panel.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-refresh"></i> Recurring Payments</h3>
-							<p class="text-center">Automatically generate recurring invoices for your customers.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-line-chart"></i> Reporting</h3>
-							<p class="text-center">Generate basic reports for accounting, invoices, or recurring payments.</p>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-language"></i> Multi-Language</h3>
-							<p class="text-center">Configure your system to use various languages.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-btc"></i> Multi-currency</h3>
-							<p class="text-center">Supports multiple currencies in your system.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-at"></i> Email Templates</h3>
-							<p class="text-center">Customisable email notificatoins to both you and your customers.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-file-o"></i> Article Pages</h3>
-							<p class="text-center">Easily add pages to your website.</p>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-credit-card"></i> Payment Gateways</h3>
-							<p class="text-center">Collect payments online with integrated payment gateways.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-file-text-o"></i> Blog</h3>
-							<p class="text-center">Keep your customers updated with the built-in blog.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-puzzle-piece"></i> Modules</h3>
-							<p class="text-center">Supports modules to enhance functionalities.</p>
-						</div>
-						<div class="col-md-3">
-							<h3 class="text-center"><i class="fa fa-users"></i> Multiple Users</h3>
-							<p class="text-center">Supports multiple administration users.</p>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<hr>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<h2>Requirements</h2>
-						<p>To run Logic Invoice on your server, you will need to ensure that you meet the following requirements:</p>
+						<h2>Uploading Logic Invoice To Your Server</h2>
+						<p>For this section, you will require the following:</p>
 						<ol>
-							<li>PHP 5.3 and above</li>
-							<li>MySQL database</li>
-							<li>Linux / Windows web server (Apache preferred)</li>
+							<li>An FTP client</li>
+							<li>Host</li>
+							<li>Username</li>
+							<li>Password</li>
 						</ol>
+						<p>Items 2 to 4 may be obtained from your web hosting provider.</p>
+						<p>Launch your FTP Client and connect to your web server. Depending on the FTP client you use, you may be able to drag all the contents within the “upload” folder into the “public_html” or “www” folder of your server. Alternatively, you can use the FTP client and navigate to the “upload” folder.</p>
+						<img class="img-responsive" src="img/filezilla.png" alt="FTP Client">
+						<div class="col-md-12">
+							<hr>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Creating a database</h2>
+						<p>After you have completed the upload, you will have to create a database before you can proceed with the installation. You will have to log into your site’s control panel and look for MySQL Databases to create a database. You will need to enter a database name, username and password. Do ensure that the user assigned to the database that you just created has all the necessary permissions.</p>
+						<div class="col-md-12">
+							<hr>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Installation Page</h2>
+						<h3>Installing Logic Invoice</h3>
+						<p>The Logic Invoice Installation Page can be accessed at the URL where you uploaded the files to. If you have uploaded the files correctly, you should be greeted with the following page:</p>
+						<img class="img-responsive" src="img/installation.png" alt="installation"><br>
+						<p>After you have read and agreed to the license, you may proceed by clicking on the green button.</p>
+						<h3>System Requirements</h3>
+						<p>The next step checks that your system has the prerequisites to run Logic Invoice. You will be able to proceed only after all the requirements have been met:</p>
+						<img class="img-responsive" src="img/system.png" alt="system"><br>
+						<h3>System Configurations</h3>
+						<p>On this page, you will have to fill in every empty field. Do note that for Database Name, it is the name of the database that you created earlier.</p>
+						<img class="img-responsive" src="img/config.png" alt="config"><br>
+						<h3>Installation Complete</h3>
+						<p>When the installation is successfully completed, you will be prompted to “Remove Installation Folder and go to Administration Panel”. Click on the button and you are done with the installation of Logic Invoice!</p>
 						<div class="col-md-12">
 							<hr>
 						</div>
